@@ -136,6 +136,7 @@
 .repeat-order { border-color: #b8c4af; font-size: 14px; color: var(--commerce-ink); }
 .account-local-notice { background: #e2e6d8; color: #4b5e46; border-radius: 8px; padding: 14px 16px; margin-bottom: 23px; font-size: 14px; line-height: 1.6; }
 .login-phone { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin: 0; font-size: 17px; font-weight: 600; }
+.phone-link { display: inline-flex; align-items: center; min-height: 44px; color: inherit; white-space: nowrap; text-decoration: underline; text-underline-offset: .18em; }
 .demo-code-note { padding: 15px; background: #e1e7d7; border: 1px solid #b9c7ac; border-radius: 7px; }
 .demo-code-note strong { display: block; font-size: 16px; }
 .demo-code-note p { margin: 7px 0 0; color: #4e5d47; font-size: 14px; line-height: 1.6; }
