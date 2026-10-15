@@ -1,0 +1,12 @@
+Solar icons by 480 Design
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Author/source: https://www.figma.com/community/file/1166831539721848736
+Distributed via the Iconify API: https://api.iconify.design/
+No modifications made to icon SVG paths.
+
+bag.svg: solar:bag-4-linear
+user.svg: solar:user-circle-linear
+clock.svg: solar:clock-circle-linear
+pin.svg: solar:map-point-linear
+search.svg: solar:magnifer-linear
