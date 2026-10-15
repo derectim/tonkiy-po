@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3eb">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Новый взгляд на кафе «Тонкий По»: любимая паназиатская кухня, удобное меню и заказ, который всегда на виду. Интерактивный концепт.">
+  <title>Тонкий По — Азия ближе, чем кажется</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./interactions.css">
+  <script src="./catalog.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#menu">Перейти к меню</a>
+  <div class="concept-bar"><span>НОВЫЙ ВЗГЛЯД НА ТОНКИЙ ПО</span><span>Интерактивный концепт · Заказы не отправляются в кафе</span></div>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#" aria-label="Тонкий По — на главную"><span class="brand-word">ТОНКИЙ <b>ПО</b><i>®</i></span><span class="brand-caption">АЗИЯ С ХАРАКТЕРОМ</span></a>
+      <nav class="main-nav" aria-label="Основная навигация"><a class="active" href="#menu">Меню</a><a href="#delivery">Доставка</a><a href="#about">О нас</a><a href="#contacts">Контакты</a></nav>
+      <div class="header-actions">
+        <button class="plain-button track-button" data-action="track" aria-label="Где мой заказ?"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg><span>Где мой заказ?</span></button>
+        <button class="icon-button account-button" data-action="account" aria-label="Личный кабинет"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg></button>
+        <button class="cart-button" data-action="cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 7V6a4 4 0 0 1 8 0v1"/></svg><span id="cart-total">Корзина</span><span class="cart-count" id="cart-count">0</span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="order-bar wrap">
+      <div class="fulfillment-switch" id="delivery-switch" role="group" aria-label="Способ получения"><button class="active" data-fulfillment="delivery" aria-pressed="true">Доставка</button><button data-fulfillment="pickup" aria-pressed="false">Самовывоз</button></div>
+      <button class="address-button" data-action="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span id="address-label">Укажите адрес доставки</span><span aria-hidden="true">↗</span></button>
+      <span class="hours"><span class="status-dot"></span>Ср–Вс, 11:00–22:00</span>
+    </div>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-star" aria-hidden="true">✳</span> ПАНАЗИАТСКАЯ КУХНЯ</p>
+        <h1 id="hero-title"><span>АЗИЯ.</span><span>БЛИЖЕ, ЧЕМ</span><span class="orange-text">КАЖЕТСЯ.</span></h1>
+        <p class="hero-description">Фо бо, огненный вок и немного счастья.<br>Готовим в Тонком По — к вашему столу.</p>
+        <a class="primary-button hero-cta" href="#menu">Выбрать вкусное <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 14h14M4 17h16M6 20h12M7 11c-3-3 3-3 0-6M12 11c-3-3 3-3 0-7M17 11c-3-3 3-3 0-6"/></svg><span>Знакомые блюда. Яркий характер.</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-vertical">TONKIY PO · ASIAN SOUL FOOD</div>
+        <span class="hero-photo-label">ТОТ САМЫЙ ФО БО</span>
+        <img class="hero-food" src="./assets/pho-bo.webp" alt="Фо Бо из Тонкого По — говядина, рисовая лапша, свежие травы и лайм" fetchpriority="high" width="800" height="800">
+        <div class="flavor-stamp" aria-label="Вкус, который греет"><span>ВКУС,</span><span>КОТОРЫЙ</span><span>ГРЕЕТ</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M6 18 18 6M12 3v18M3 12h18"/></svg></div>
+        <button class="tracking-teaser" data-action="track-demo"><span class="teaser-top"><span class="status-dot"></span> ЗАКАЗ ВСЕГДА НА ВИДУ <span aria-hidden="true">↗</span></span><span class="teaser-heading">Уже готовим!</span><span class="teaser-progress"><i class="done"></i><i class="current"></i><i></i><i></i></span><span class="teaser-bottom"><span>От кухни до вашей двери</span><span>Демо трекера</span></span></button>
+      </div>
+    </section>
+    <div class="flavor-ticker" aria-hidden="true"><div>СЛЕГКА ОСТРО <span>✳</span> ОЧЕНЬ ВКУСНО <span>✳</span> ПО-НАСТОЯЩЕМУ <span>✳</span> ТОНКИЙ ПО <span>✳</span> СЛЕГКА ОСТРО <span>✳</span> ОЧЕНЬ ВКУСНО <span>✳</span></div></div>
+    <section class="menu-section wrap" id="menu" aria-labelledby="menu-heading">
+      <div class="section-heading"><div><p class="eyebrow">ЧТО СЕГОДНЯ ПО ВКУСУ?</p><h2 id="menu-heading">МЕНЮ С ХАРАКТЕРОМ<span class="orange-text">.</span></h2></div><label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="menu-search" type="search" placeholder="Найти любимое блюдо" aria-label="Поиск по меню" autocomplete="off"></label></div>
+      <div class="category-tabs" id="category-tabs" role="group" aria-label="Категории меню"><button class="active" data-category="popular" aria-pressed="true">Любимое <span aria-hidden="true">✳</span></button><button data-category="soups" aria-pressed="false">Супы</button><button data-category="wok" aria-pressed="false">Вок</button><button data-category="hot" aria-pressed="false">Горячее</button><button data-category="snacks" aria-pressed="false">Закуски и салаты</button><button data-category="sides" aria-pressed="false">Гарниры и соусы</button><button data-category="desserts" aria-pressed="false">Десерты</button><button data-category="drinks" aria-pressed="false">Напитки</button><button data-category="all" aria-pressed="false">Всё меню</button></div>
+      <div class="menu-subheading"><h3 id="menu-title">С этого начинается любовь</h3><span id="menu-count">6 блюд</span></div>
+      <div id="products-grid" class="products-grid" aria-live="polite"></div>
+      <div class="menu-footnote"><span>Фотографии и цены — с действующего сайта кафе.</span><span>Расскажите об аллергиях перед настоящим заказом.</span></div>
+    </section>
+    <section class="delivery-section wrap" id="delivery" aria-labelledby="delivery-heading">
+      <div class="delivery-intro"><p class="eyebrow">УДОБНО. ПОНЯТНО. ПО-ВАШЕМУ.</p><h2 id="delivery-heading">ВАШ УЖИН.<br>БЕЗ ЛИШНИХ<br><span class="orange-text">ВОПРОСОВ.</span></h2><p>От первого «хочу» до последней ложки — всё под рукой.</p></div>
+      <div class="service-features"><article><span class="feature-number">01 /</span><div><h3>Выберите своё</h3><p>От пряного фо бо до хрустящих креветок. Всё меню — в одном месте.</p></div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></article><article><span class="feature-number">02 /</span><div><h3>Будьте в курсе</h3><p>Принят, готовим, передан курьеру, доставлен. Заказ всегда на виду.</p><button class="text-link" data-action="track-demo">Посмотреть пример <span aria-hidden="true">↗</span></button></div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg></article><article><span class="feature-number">03 /</span><div><h3>Возвращайтесь к любимому</h3><p>История заказов и повтор в пару касаний — в личном кабинете.</p><button class="text-link" data-action="account">Заглянуть в кабинет <span aria-hidden="true">↗</span></button></div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 1-2-5M20 3v6h-6"/></svg></article></div>
+    </section>
+    <section class="about-section" id="about" aria-labelledby="about-heading"><div class="about-inner wrap"><div class="about-photo"><img src="./assets/hero.webp" alt="Блюда паназиатской кухни в кафе Тонкий По" loading="lazy" width="1600" height="1066"><span class="photo-caption">МНОГО ВКУСОВ. ОДИН ТОНКИЙ ПО.</span></div><div class="about-copy"><p class="eyebrow">МАЛЕНЬКОЕ КАФЕ. БОЛЬШОЕ ПУТЕШЕСТВИЕ.</p><h2 id="about-heading">ИЗ АЗИИ —<br>С <span>ЛЮБОВЬЮ.</span></h2><p>Вьетнамский фо бо, тайский том ям, лапша из раскалённого вока. Собрали любимые вкусы Азии в нашем кафе в Ильинском-Усово.</p><p>Заходите на обед, собирайте друзей или выбирайте что-нибудь вкусное домой.</p><a class="light-button" href="#contacts">В гости к По <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="contacts-section wrap" id="contacts" aria-labelledby="contacts-heading"><div><p class="eyebrow">УВИДИМСЯ У ПО</p><h2 id="contacts-heading">МЫ РЯДОМ<span class="orange-text">.</span></h2></div><div class="contact-details"><p class="contact-label">КАФЕ «ТОНКИЙ ПО»</p><p class="contact-address">Ильинское-Усово,<br>ул. Архангельская, 15</p><p>Среда–воскресенье, 11:00–22:00</p><a class="contact-phone" href="tel:+79015591357">+7 901 559-13-57 <span aria-hidden="true">↗</span></a></div><a class="map-link" href="https://yandex.ru/maps/?text=Ильинское-Усово%20Архангельская%2015%20Тонкий%20По" target="_blank" rel="noopener noreferrer"><div class="map-graphic" aria-hidden="true"><span class="map-road road-one"></span><span class="map-road road-two"></span><span class="map-road road-three"></span><span class="map-block b1"></span><span class="map-block b2"></span><span class="map-block b3"></span><span class="map-marker">ПО</span></div><span>Построить маршрут <span aria-hidden="true">↗</span></span></a></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand footer-brand" href="#"><span class="brand-word">ТОНКИЙ <b>ПО</b></span><span class="brand-caption">АЗИЯ С ХАРАКТЕРОМ</span></a><div><p>© Тонкий По, 2026</p><p>ИП Янтудина Диана Маратовна · ИНН 550149013987</p></div><p class="prototype-note">Дизайн-концепт. Меню, корзина и кабинет работают в демо-режиме.</p></footer>
+  <div class="mobile-cart"><button data-action="cart"><span>Ваша корзина <span id="mobile-cart-count">0</span></span><span id="mobile-cart-total">0 ₽</span><span aria-hidden="true">↗</span></button></div>
+  <dialog id="main-dialog" aria-label="Информация"><button class="dialog-close" data-action="close-dialog" aria-label="Закрыть окно">×</button><div id="dialog-body"></div></dialog>
+  <dialog id="drawer-dialog" aria-label="Панель заказа"><button class="dialog-close" data-action="close-drawer" aria-label="Закрыть панель">×</button><div id="drawer-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+
