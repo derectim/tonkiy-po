@@ -36,13 +36,14 @@ python -m http.server 5173 --bind 0.0.0.0 --directory dist
 
 ## Дизайн и проверка
 
-Использованы MengTo design-first-ui-prompting и build-awwwards-quality-sites; сохранён существующий GSAP/ScrollTrigger и Lenis. При reduced motion и coarse pointer плавная прокрутка отключена. Диалоги и скрытая вкладка останавливают движение.
+Использованы MengTo design-first-ui-prompting и build-awwwards-quality-sites. GSAP/ScrollTrigger и Lenis работают для прокрутки только на десктопе с точным указателем. На телефонах, сенсорных устройствах и экранах до 900px используется нативная прокрутка: изменения высоты браузерных панелей не вызывают ScrollTrigger.refresh. Короткое вступление первого экрана сохранено; при reduced motion анимация отключена. Диалоги и скрытая вкладка останавливают движение десктопа.
 
 Проверены первый экран, меню, кабинет, корзина, оформление и панель статуса на десктопе, узком экране 320px, телефоне и в горизонтальном положении. Автоматические проверки используют только встроенные модули Node.js (версия 20.11 или новее):
 
 ```sh
 node qa/verify-variants.mjs
 node qa/verify-mobile-sections.mjs
+node qa/verify-mobile-scroll.mjs
 node qa/verify-payment.mjs
 ```
 

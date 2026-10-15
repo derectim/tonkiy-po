@@ -20,6 +20,7 @@
   let disposed = false;
   let suspended = false;
   let introPlayed = false;
+  let scrollMotionEnabled = null;
   const revealedElements = new WeakSet();
 
   function destroyRuntime() {
@@ -45,12 +46,21 @@
 
   function initialize() {
     destroyRuntime();
-    if (disposed || suspended || reduceMotion.matches) return;
+    if (disposed || suspended) return;
+    // Mobile browser bars resize the viewport while a finger is scrolling.
+    // ScrollTrigger.refresh() resets/restores scroll positions; keep that work
+    // entirely outside native touch and small-screen scrolling.
+    const scrollMotion = desktop.matches && !coarsePointer.matches && !reduceMotion.matches;
+    document.documentElement.dataset.scrollMode = scrollMotion ? 'enhanced' : 'native';
+    if (!scrollMotion && scrollMotionEnabled !== false) ScrollTrigger.disable(false);
+    else if (scrollMotion && scrollMotionEnabled === false) ScrollTrigger.enable();
+    scrollMotionEnabled = scrollMotion;
+    if (reduceMotion.matches) return;
 
     const current = {
       destroyed: false, context: null, lenis: null, style: null, observer: null,
       tickerAttached: false, refreshTimer: 0, heroTween: null,
-      revealTweens: new Map(), removeScrollListener: null, changedLagSmoothing: false,
+      revealTweens: new Map(), removeScrollListener: null, changedLagSmoothing: false, scrollMotion,
     };
     runtime = current;
     const active = () => !current.destroyed && runtime === current;
@@ -77,7 +87,7 @@
       }
     };
     current.requestRefresh = () => {
-      if (!active()) return;
+      if (!active() || !current.scrollMotion) return;
       clearTimeout(current.refreshTimer);
       current.refreshTimer = setTimeout(() => {
         if (!active() || document.hidden) return;
@@ -104,7 +114,7 @@
     };
 
     try {
-      gsap.registerPlugin(ScrollTrigger);
+      if (scrollMotion) gsap.registerPlugin(ScrollTrigger);
       current.context = gsap.context(() => {}, document.body);
       current.context.add(() => {
         const heroTargets = [...document.querySelectorAll('[data-hero-reveal]')]
@@ -117,9 +127,9 @@
           });
         }
 
-        const revealTargets = [...document.querySelectorAll('[data-reveal]')]
+        const revealTargets = scrollMotion ? [...document.querySelectorAll('[data-reveal]')]
           .filter((element) => !element.closest('[data-hero-reveal]')
-            && !element.parentElement?.closest('[data-reveal]') && !revealedElements.has(element));
+            && !element.parentElement?.closest('[data-reveal]') && !revealedElements.has(element)) : [];
         revealTargets.forEach((element) => {
           const tween = gsap.fromTo(element, { opacity: 0.2, y: 24 }, {
             opacity: 1, y: 0, duration: 0.95, ease: 'power3.out',
@@ -130,7 +140,7 @@
           current.revealTweens.set(element, tween);
         });
 
-        if (desktop.matches && !coarsePointer.matches) {
+        if (scrollMotion) {
           document.querySelectorAll('[data-hero-image]').forEach((image) => {
             // Put data-hero-reveal on the surrounding figure to avoid two y tweens.
             if (image.hasAttribute('data-hero-reveal')) return;
@@ -146,7 +156,7 @@
         }
       });
 
-      if (desktop.matches && !coarsePointer.matches && typeof window.Lenis === 'function') {
+      if (scrollMotion && typeof window.Lenis === 'function') {
         // Recommended Lenis foundation, added only while its instance is active.
         // No CSS selector hides or disables content while motion initializes.
         current.style = document.createElement('style');
@@ -170,28 +180,30 @@
         current.changedLagSmoothing = true;
       }
 
-      current.observer = new MutationObserver((records) => {
-        if (!active()) return;
-        if (records.some((record) => record.type === 'attributes' && record.target.tagName === 'DIALOG')) {
-          current.syncRunning();
-          current.requestRefresh();
-        }
-        if (records.some((record) => record.type === 'childList' && record.target.id === 'products-grid')) {
-          current.requestRefresh();
-        }
-      });
-      current.observer.observe(document.body, {
-        subtree: true, childList: true, attributes: true, attributeFilter: ['open'],
-      });
-      document.addEventListener('visibilitychange', current.onVisibility);
+      if (scrollMotion) {
+        current.observer = new MutationObserver((records) => {
+          if (!active()) return;
+          if (records.some((record) => record.type === 'attributes' && record.target.tagName === 'DIALOG')) {
+            current.syncRunning();
+            current.requestRefresh();
+          }
+          if (records.some((record) => record.type === 'childList' && record.target.id === 'products-grid')) {
+            current.requestRefresh();
+          }
+        });
+        current.observer.observe(document.body, {
+          subtree: true, childList: true, attributes: true, attributeFilter: ['open'],
+        });
+        document.addEventListener('visibilitychange', current.onVisibility);
+        document.addEventListener('load', current.onImageLoad, true);
+        window.addEventListener('resize', current.requestRefresh, { passive: true });
+        window.addEventListener('load', current.requestRefresh);
+        document.fonts?.addEventListener('loadingdone', current.requestRefresh);
+        document.fonts?.ready.then(() => { if (active()) current.requestRefresh(); });
+        current.requestRefresh();
+      }
       document.addEventListener('focusin', current.onFocus);
-      document.addEventListener('load', current.onImageLoad, true);
-      window.addEventListener('resize', current.requestRefresh, { passive: true });
-      window.addEventListener('load', current.requestRefresh);
-      document.fonts?.addEventListener('loadingdone', current.requestRefresh);
-      document.fonts?.ready.then(() => { if (active()) current.requestRefresh(); });
       current.syncRunning();
-      current.requestRefresh();
     } catch {
       // A decorative enhancement may fail; restore the complete static page.
       destroyRuntime();
