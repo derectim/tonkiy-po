@@ -10,3 +10,18 @@ user.svg: solar:user-circle-linear
 clock.svg: solar:clock-circle-linear
 pin.svg: solar:map-point-linear
 search.svg: solar:magnifer-linear
+
+menu.svg: solar:hamburger-menu-linear
+arrow-down.svg: solar:arrow-down-linear
+arrow-right-up.svg: solar:arrow-right-up-linear
+arrow-up.svg: solar:arrow-up-linear
+arrow-right.svg: solar:arrow-right-linear
+close.svg: solar:close-circle-linear
+check.svg: solar:check-read-linear
+plus.svg: solar:add-circle-linear
+minus.svg: solar:minus-circle-linear
+heart.svg: solar:heart-linear
+
+Category icons:
+category-all.svg: solar:list-linear, 480 Design, CC BY 4.0.
+category-soups.svg, category-wok.svg, category-hot.svg, category-snacks.svg, category-sides.svg, category-desserts.svg, category-drinks.svg: original simple interface pictograms authored for this cafe prototype; stroke only, no fill.

@@ -1,0 +1,24 @@
+/* On phones the category rail follows complete menu sections instead of hiding dishes. */
+@media (max-width: 600px) {
+  .menu-layout { display: block; }
+  .menu-index { position: sticky; top: var(--header-height, 72px); z-index: 25; margin: 0 -16px 16px; padding: 9px 0; background: #eeeae0; border-bottom: 1px solid #cbd1c0; }
+  .menu-index .index-label, .menu-index .menu-allergy { display: none; }
+  #category-tabs { flex-direction: row; align-items: center; margin: 0; padding: 0 16px; gap: 8px; overflow-x: auto; overflow-y: hidden; scroll-padding-inline: 16px; overscroll-behavior-x: contain; }
+  #category-tabs button { flex: none; }
+  #category-tabs button:disabled { opacity: .4; }
+  .products-grid.menu-grouped { display: block; }
+  .menu-category-section { margin: 0 0 28px; scroll-margin-top: calc(var(--category-rail-height, 65px) + 12px); }
+  .menu-category-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 7px 1px 13px; }
+  .menu-category-heading h3 { margin: 0; font-family: var(--body); font-size: 23px; font-weight: 650; line-height: 1.35; letter-spacing: -.5px; }
+  .menu-category-heading > span { color: var(--muted); font-size: 14px; line-height: 1.5; }
+  .menu-category-products { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .menu-grouped .product-bottom { align-items: flex-start; }
+  .menu-grouped .product-add, .menu-grouped .product-add[data-action="product"] { display: flex; justify-content: space-between; width: 100%; height: auto; min-height: 44px; gap: 5px; padding: 9px 8px; margin: 5px 0 0; }
+  .menu-grouped .product-add .add-label { display: inline; font-size: 14px; line-height: 1.4; }
+  .menu-grouped .product-add svg { width: 20px; height: 20px; flex: none; }
+  .menu-grouped .product-add:hover svg { transform: none; }
+  .menu-content { scroll-margin-top: calc(var(--category-rail-height, 65px) + 12px); }
+}
+@media (max-width: 374px) {
+  .menu-category-products { grid-template-columns: minmax(0, 1fr); }
+}

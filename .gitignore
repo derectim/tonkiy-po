@@ -3,6 +3,7 @@ node_modules/
 .sites-checkout/
 *.tar.gz
 *.zip
-qa/
+qa/*
+!qa/verify-*.mjs
 
 versions/

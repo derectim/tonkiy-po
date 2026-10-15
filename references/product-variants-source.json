@@ -1,0 +1,1136 @@
+{
+  "sourceUrl": "https://pocafe.ru/",
+  "retrievedAt": "2026-10-15T15:47:22.945427+00:00",
+  "savedHtml": "references/pocafe-live-variant-source.html",
+  "sourceSha256": "9643a2b1739724e8905a21d2e15c8e6b526d8fe87f7dfb4eb893d5522c66510e",
+  "sourcePlatform": "Tilda, project4748501/page23122847",
+  "priceSemanticsSourceUrl": "https://static.tildacdn.com/js/tilda-products-1.0.min.js",
+  "priceSemanticsFunction": "t_prod__updatePrice: option attr containing + adds, plain numeric replaces base price, blank inherits.",
+  "notes": [
+    "Public HTML contains Tilda option groups, not WooCommerce variations. Source exposes record + product IDs and price attributes but no individual combination IDs/SKUs or stock counts.",
+    "Blank data-product-variant-price means inherit base price. A plain value such as 940 replaces base price; it must NOT be added to base price. Availability cannot be inferred as authoritative stock.",
+    "Option combinations here are the Cartesian product of the published groups; derivedId keys are local and must not be presented as real SKU/variation IDs.",
+    "Multiple Tilda product IDs are reused across records; use sourceRecordId + sourceProductId for source identity.",
+    "When no explicit option selected attribute exists, the HTML select defaults to its first option."
+  ],
+  "totalProducts": 29,
+  "variableProductsCount": 12,
+  "derivedCombinationsCount": 44,
+  "variableProducts": [
+    {
+      "sourceProductId": "1699521530515",
+      "sourceRecordId": "rec373367566",
+      "name": "Креветки спайси",
+      "priceText": "590",
+      "basePrice": 590.0,
+      "image": "https://static.tildacdn.com/tild3364-3537-4665-a234-323139336238/_.png",
+      "optionGroups": [
+        {
+          "label": "Соус на выбор",
+          "defaultValue": "Спайси (острый)",
+          "options": [
+            {
+              "value": "Спайси (острый)",
+              "label": "Спайси (острый)",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Сладкий чили",
+              "label": "Сладкий чили",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            }
+          ]
+        }
+      ],
+      "sku": null,
+      "stock": null,
+      "catalogId": "shrimp-spicy",
+      "derivedCombinations": [
+        {
+          "derivedId": "shrimp-spicy--0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Спайси (острый)"
+          ],
+          "price": 590.0,
+          "availability": null
+        },
+        {
+          "derivedId": "shrimp-spicy--1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Сладкий чили"
+          ],
+          "price": 590.0,
+          "availability": null
+        }
+      ]
+    },
+    {
+      "sourceProductId": "1498486363994",
+      "sourceRecordId": "rec373493392",
+      "name": "Том Ям Кхати с курицей",
+      "priceText": "690",
+      "basePrice": 690.0,
+      "image": "https://static.tildacdn.com/tild3634-3937-4866-b434-353033633737/-_____-2.jpg",
+      "optionGroups": [
+        {
+          "label": "Острота",
+          "defaultValue": "Острый",
+          "options": [
+            {
+              "value": "Острый",
+              "label": "Острый",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Средне-острый",
+              "label": "Средне-острый",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            }
+          ]
+        }
+      ],
+      "sku": null,
+      "stock": null,
+      "catalogId": "tom-yum-chicken",
+      "derivedCombinations": [
+        {
+          "derivedId": "tom-yum-chicken--0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Острый"
+          ],
+          "price": 690.0,
+          "availability": null
+        },
+        {
+          "derivedId": "tom-yum-chicken--1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Средне-острый"
+          ],
+          "price": 690.0,
+          "availability": null
+        }
+      ]
+    },
+    {
+      "sourceProductId": "1786898469755",
+      "sourceRecordId": "rec373493392",
+      "name": "Том Ям Кхати с морепродуктами",
+      "priceText": "850",
+      "basePrice": 850.0,
+      "image": "https://static.tildacdn.com/tild3634-3937-4866-b434-353033633737/-_____-2.jpg",
+      "optionGroups": [
+        {
+          "label": "Острота",
+          "defaultValue": "Острый",
+          "options": [
+            {
+              "value": "Острый",
+              "label": "Острый",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Средне-острый",
+              "label": "Средне-острый",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            }
+          ]
+        }
+      ],
+      "sku": null,
+      "stock": null,
+      "catalogId": "tom-yum-seafood",
+      "derivedCombinations": [
+        {
+          "derivedId": "tom-yum-seafood--0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Острый"
+          ],
+          "price": 850.0,
+          "availability": null
+        },
+        {
+          "derivedId": "tom-yum-seafood--1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Средне-острый"
+          ],
+          "price": 850.0,
+          "availability": null
+        }
+      ]
+    },
+    {
+      "sourceProductId": "1497456130776",
+      "sourceRecordId": "rec373511433",
+      "name": "Лапша Вок (собери сам)",
+      "priceText": "от 420",
+      "basePrice": 420.0,
+      "image": "https://static.tildacdn.com/tild3665-6132-4334-b435-643663323738/_-2.jpg",
+      "optionGroups": [
+        {
+          "label": "Лапша",
+          "defaultValue": "Удон (пшеничная широкая)",
+          "options": [
+            {
+              "value": "Удон (пшеничная широкая)",
+              "label": "Удон (пшеничная широкая)",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Рисовая",
+              "label": "Рисовая",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Фунчеза (стеклянная)",
+              "label": "Фунчеза (стеклянная)",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            }
+          ]
+        },
+        {
+          "label": "Начинка",
+          "defaultValue": "С овощами",
+          "options": [
+            {
+              "value": "С овощами",
+              "label": "С овощами",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "С курицей 550 руб. ",
+              "label": "С курицей 550 руб.",
+              "sourcePriceAttribute": " 550",
+              "priceMode": "replace",
+              "priceValue": 550.0
+            },
+            {
+              "value": "С говядиной 690 руб. ",
+              "label": "С говядиной 690 руб.",
+              "sourcePriceAttribute": " 690",
+              "priceMode": "replace",
+              "priceValue": 690.0
+            },
+            {
+              "value": "С морепродуктами 690 руб. ",
+              "label": "С морепродуктами 690 руб.",
+              "sourcePriceAttribute": " 690",
+              "priceMode": "replace",
+              "priceValue": 690.0
+            }
+          ]
+        }
+      ],
+      "sku": null,
+      "stock": null,
+      "catalogId": "wok-noodles",
+      "derivedCombinations": [
+        {
+          "derivedId": "wok-noodles--0-0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Удон (пшеничная широкая)",
+            "С овощами"
+          ],
+          "price": 420.0,
+          "availability": null
+        },
+        {
+          "derivedId": "wok-noodles--0-1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Удон (пшеничная широкая)",
+            "С курицей 550 руб. "
+          ],
+          "price": 550.0,
+          "availability": null
+        },
+        {
+          "derivedId": "wok-noodles--0-2",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Удон (пшеничная широкая)",
+            "С говядиной 690 руб. "
+          ],
+          "price": 690.0,
+          "availability": null
+        },
+        {
+          "derivedId": "wok-noodles--0-3",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Удон (пшеничная широкая)",
+            "С морепродуктами 690 руб. "
+          ],
+          "price": 690.0,
+          "availability": null
+        },
+        {
+          "derivedId": "wok-noodles--1-0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Рисовая",
+            "С овощами"
+          ],
+          "price": 420.0,
+          "availability": null
+        },
+        {
+          "derivedId": "wok-noodles--1-1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Рисовая",
+            "С курицей 550 руб. "
+          ],
+          "price": 550.0,
+          "availability": null
+        },
+        {
+          "derivedId": "wok-noodles--1-2",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Рисовая",
+            "С говядиной 690 руб. "
+          ],
+          "price": 690.0,
+          "availability": null
+        },
+        {
+          "derivedId": "wok-noodles--1-3",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Рисовая",
+            "С морепродуктами 690 руб. "
+          ],
+          "price": 690.0,
+          "availability": null
+        },
+        {
+          "derivedId": "wok-noodles--2-0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Фунчеза (стеклянная)",
+            "С овощами"
+          ],
+          "price": 420.0,
+          "availability": null
+        },
+        {
+          "derivedId": "wok-noodles--2-1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Фунчеза (стеклянная)",
+            "С курицей 550 руб. "
+          ],
+          "price": 550.0,
+          "availability": null
+        },
+        {
+          "derivedId": "wok-noodles--2-2",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Фунчеза (стеклянная)",
+            "С говядиной 690 руб. "
+          ],
+          "price": 690.0,
+          "availability": null
+        },
+        {
+          "derivedId": "wok-noodles--2-3",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Фунчеза (стеклянная)",
+            "С морепродуктами 690 руб. "
+          ],
+          "price": 690.0,
+          "availability": null
+        }
+      ]
+    },
+    {
+      "sourceProductId": "1699529227507",
+      "sourceRecordId": "rec373515503",
+      "name": "Креветки в соусе апельсиновый кимчи",
+      "priceText": "790",
+      "basePrice": 790.0,
+      "image": "https://static.tildacdn.com/tild6135-3065-4036-b834-356333653163/231102_PO_21.jpg",
+      "optionGroups": [
+        {
+          "label": "Гарнир",
+          "defaultValue": "Без гарнира",
+          "options": [
+            {
+              "value": "Без гарнира",
+              "label": "Без гарнира",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Рис 150 р.",
+              "label": "Рис 150 р.",
+              "sourcePriceAttribute": "940",
+              "priceMode": "replace",
+              "priceValue": 940.0
+            }
+          ]
+        }
+      ],
+      "sku": null,
+      "stock": null,
+      "catalogId": "shrimp-orange-kimchi",
+      "derivedCombinations": [
+        {
+          "derivedId": "shrimp-orange-kimchi--0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Без гарнира"
+          ],
+          "price": 790.0,
+          "availability": null
+        },
+        {
+          "derivedId": "shrimp-orange-kimchi--1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Рис 150 р."
+          ],
+          "price": 940.0,
+          "availability": null
+        }
+      ]
+    },
+    {
+      "sourceProductId": "1659016766062",
+      "sourceRecordId": "rec373515503",
+      "name": "Говядина в соусе черный перец",
+      "priceText": "790",
+      "basePrice": 790.0,
+      "image": "https://static.tildacdn.com/tild6364-6566-4666-a135-303934303430/231102_PO_15.jpg",
+      "optionGroups": [
+        {
+          "label": "Гарнир",
+          "defaultValue": "Без гарнира",
+          "options": [
+            {
+              "value": "Без гарнира",
+              "label": "Без гарнира",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Рис 150 р.",
+              "label": "Рис 150 р.",
+              "sourcePriceAttribute": " 940",
+              "priceMode": "replace",
+              "priceValue": 940.0
+            }
+          ]
+        }
+      ],
+      "sku": null,
+      "stock": null,
+      "catalogId": "beef-black-pepper",
+      "derivedCombinations": [
+        {
+          "derivedId": "beef-black-pepper--0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Без гарнира"
+          ],
+          "price": 790.0,
+          "availability": null
+        },
+        {
+          "derivedId": "beef-black-pepper--1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Рис 150 р."
+          ],
+          "price": 940.0,
+          "availability": null
+        }
+      ]
+    },
+    {
+      "sourceProductId": "1659016881760",
+      "sourceRecordId": "rec373515503",
+      "name": "Курица в кисло-сладком соусе",
+      "priceText": "650",
+      "basePrice": 650.0,
+      "image": "https://static.tildacdn.com/tild6165-6464-4536-b937-663239626362/____-2.jpg",
+      "optionGroups": [
+        {
+          "label": "Гарнир",
+          "defaultValue": "Без гарнира",
+          "options": [
+            {
+              "value": "Без гарнира",
+              "label": "Без гарнира",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Рис 150 р.",
+              "label": "Рис 150 р.",
+              "sourcePriceAttribute": "800",
+              "priceMode": "replace",
+              "priceValue": 800.0
+            }
+          ]
+        }
+      ],
+      "sku": null,
+      "stock": null,
+      "catalogId": "sweet-sour-chicken",
+      "derivedCombinations": [
+        {
+          "derivedId": "sweet-sour-chicken--0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Без гарнира"
+          ],
+          "price": 650.0,
+          "availability": null
+        },
+        {
+          "derivedId": "sweet-sour-chicken--1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Рис 150 р."
+          ],
+          "price": 800.0,
+          "availability": null
+        }
+      ]
+    },
+    {
+      "sourceProductId": "1659017004954",
+      "sourceRecordId": "rec373515503",
+      "name": "Курица по-китайски",
+      "priceText": "650",
+      "basePrice": 650.0,
+      "image": "https://static.tildacdn.com/tild3939-6562-4538-b065-663635393331/___1-2.jpg",
+      "optionGroups": [
+        {
+          "label": "Гарнир",
+          "defaultValue": "Без гарнира",
+          "options": [
+            {
+              "value": "Без гарнира",
+              "label": "Без гарнира",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Рис 150 р.",
+              "label": "Рис 150 р.",
+              "sourcePriceAttribute": " 800",
+              "priceMode": "replace",
+              "priceValue": 800.0
+            }
+          ]
+        }
+      ],
+      "sku": null,
+      "stock": null,
+      "catalogId": "chinese-chicken",
+      "derivedCombinations": [
+        {
+          "derivedId": "chinese-chicken--0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Без гарнира"
+          ],
+          "price": 650.0,
+          "availability": null
+        },
+        {
+          "derivedId": "chinese-chicken--1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Рис 150 р."
+          ],
+          "price": 800.0,
+          "availability": null
+        }
+      ]
+    },
+    {
+      "sourceProductId": "1659017077070",
+      "sourceRecordId": "rec373515503",
+      "name": "Курица по-тайски с кешью",
+      "priceText": "750",
+      "basePrice": 750.0,
+      "image": "https://static.tildacdn.com/tild6164-3661-4265-b231-366364336333/_____4-2.jpg",
+      "optionGroups": [
+        {
+          "label": "Гарнир",
+          "defaultValue": "Без гарнира",
+          "options": [
+            {
+              "value": "Без гарнира",
+              "label": "Без гарнира",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Рис 150 р.",
+              "label": "Рис 150 р.",
+              "sourcePriceAttribute": "900",
+              "priceMode": "replace",
+              "priceValue": 900.0
+            },
+            {
+              "value": "Брокколи по-азиатски WOK 350 р.",
+              "label": "Брокколи по-азиатски WOK 350 р.",
+              "sourcePriceAttribute": "1100",
+              "priceMode": "replace",
+              "priceValue": 1100.0
+            }
+          ]
+        }
+      ],
+      "sku": null,
+      "stock": null,
+      "catalogId": "thai-cashew-chicken",
+      "derivedCombinations": [
+        {
+          "derivedId": "thai-cashew-chicken--0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Без гарнира"
+          ],
+          "price": 750.0,
+          "availability": null
+        },
+        {
+          "derivedId": "thai-cashew-chicken--1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Рис 150 р."
+          ],
+          "price": 900.0,
+          "availability": null
+        },
+        {
+          "derivedId": "thai-cashew-chicken--2",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Брокколи по-азиатски WOK 350 р."
+          ],
+          "price": 1100.0,
+          "availability": null
+        }
+      ]
+    },
+    {
+      "sourceProductId": "1659017159479",
+      "sourceRecordId": "rec373515503",
+      "name": "Курица терияки",
+      "priceText": "650",
+      "basePrice": 650.0,
+      "image": "https://static.tildacdn.com/tild3130-3233-4134-b263-303062396536/_-2.jpg",
+      "optionGroups": [
+        {
+          "label": "Гарнир",
+          "defaultValue": "Без гарнира",
+          "options": [
+            {
+              "value": "Без гарнира",
+              "label": "Без гарнира",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Рис 150 р.",
+              "label": "Рис 150 р.",
+              "sourcePriceAttribute": " 800",
+              "priceMode": "replace",
+              "priceValue": 800.0
+            }
+          ]
+        }
+      ],
+      "sku": null,
+      "stock": null,
+      "catalogId": "chicken-teriyaki",
+      "derivedCombinations": [
+        {
+          "derivedId": "chicken-teriyaki--0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Без гарнира"
+          ],
+          "price": 650.0,
+          "availability": null
+        },
+        {
+          "derivedId": "chicken-teriyaki--1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Рис 150 р."
+          ],
+          "price": 800.0,
+          "availability": null
+        }
+      ]
+    },
+    {
+      "sourceProductId": "1733459904198",
+      "sourceRecordId": "rec836273340",
+      "name": "Порция соуса на выбор",
+      "priceText": "от 90",
+      "basePrice": 90.0,
+      "image": "https://static.tildacdn.com/tild6464-3831-4435-b436-326538326164/afd04c0fb38b11efa805.png",
+      "optionGroups": [
+        {
+          "label": "Соус на выбор",
+          "defaultValue": "Кетчуп",
+          "options": [
+            {
+              "value": "Кетчуп",
+              "label": "Кетчуп",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Кисло-сладкий",
+              "label": "Кисло-сладкий",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Сладкий чили",
+              "label": "Сладкий чили",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Lao GanMa (из соевых бобов)",
+              "label": "Lao GanMa (из соевых бобов)",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Шри-Рача",
+              "label": "Шри-Рача",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Спайси",
+              "label": "Спайси",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Терияки",
+              "label": "Терияки",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Соевый",
+              "label": "Соевый",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Уксус с чили и чесноком",
+              "label": "Уксус с чили и чесноком",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            }
+          ]
+        }
+      ],
+      "sku": null,
+      "stock": null,
+      "catalogId": "sauce",
+      "derivedCombinations": [
+        {
+          "derivedId": "sauce--0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Кетчуп"
+          ],
+          "price": 90.0,
+          "availability": null
+        },
+        {
+          "derivedId": "sauce--1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Кисло-сладкий"
+          ],
+          "price": 90.0,
+          "availability": null
+        },
+        {
+          "derivedId": "sauce--2",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Сладкий чили"
+          ],
+          "price": 90.0,
+          "availability": null
+        },
+        {
+          "derivedId": "sauce--3",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Lao GanMa (из соевых бобов)"
+          ],
+          "price": 90.0,
+          "availability": null
+        },
+        {
+          "derivedId": "sauce--4",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Шри-Рача"
+          ],
+          "price": 90.0,
+          "availability": null
+        },
+        {
+          "derivedId": "sauce--5",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Спайси"
+          ],
+          "price": 90.0,
+          "availability": null
+        },
+        {
+          "derivedId": "sauce--6",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Терияки"
+          ],
+          "price": 90.0,
+          "availability": null
+        },
+        {
+          "derivedId": "sauce--7",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Соевый"
+          ],
+          "price": 90.0,
+          "availability": null
+        },
+        {
+          "derivedId": "sauce--8",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Уксус с чили и чесноком"
+          ],
+          "price": 90.0,
+          "availability": null
+        }
+      ]
+    },
+    {
+      "sourceProductId": "1516628799188",
+      "sourceRecordId": "rec373520909",
+      "name": "Вьетнамский лимонад",
+      "priceText": "190",
+      "basePrice": 190.0,
+      "image": "https://static.tildacdn.com/tild3435-3735-4835-a331-346563306130/noroot.png",
+      "optionGroups": [
+        {
+          "label": "Вкус",
+          "defaultValue": "Папайя",
+          "options": [
+            {
+              "value": "Папайя",
+              "label": "Папайя",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Личи",
+              "label": "Личи",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Драгон фрут",
+              "label": "Драгон фрут",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            },
+            {
+              "value": "Мангустин",
+              "label": "Мангустин",
+              "sourcePriceAttribute": "",
+              "priceMode": "inherit",
+              "priceValue": null
+            }
+          ]
+        }
+      ],
+      "sku": null,
+      "stock": null,
+      "catalogId": "vietnamese-lemonade",
+      "derivedCombinations": [
+        {
+          "derivedId": "vietnamese-lemonade--0",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Папайя"
+          ],
+          "price": 190.0,
+          "availability": null
+        },
+        {
+          "derivedId": "vietnamese-lemonade--1",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Личи"
+          ],
+          "price": 190.0,
+          "availability": null
+        },
+        {
+          "derivedId": "vietnamese-lemonade--2",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Драгон фрут"
+          ],
+          "price": 190.0,
+          "availability": null
+        },
+        {
+          "derivedId": "vietnamese-lemonade--3",
+          "sourceVariationId": null,
+          "optionValues": [
+            "Мангустин"
+          ],
+          "price": 190.0,
+          "availability": null
+        }
+      ]
+    }
+  ],
+  "allProductsSummary": [
+    {
+      "name": "Черри в соусе кимчи",
+      "sourceProductId": "1699511727022",
+      "sourceRecordId": "rec373367566",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Креветки спайси",
+      "sourceProductId": "1699521530515",
+      "sourceRecordId": "rec373367566",
+      "optionGroupsCount": 1
+    },
+    {
+      "name": "Креветки васаби",
+      "sourceProductId": "1635619569777",
+      "sourceRecordId": "rec373367566",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Битые огурцы по-китайски",
+      "sourceProductId": "1497456130776",
+      "sourceRecordId": "rec373367566",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Салат из чёрных грибов и лука",
+      "sourceProductId": "1635620838300",
+      "sourceRecordId": "rec373367566",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Салат из хрустящих баклажан с помидорами",
+      "sourceProductId": "1516274392962",
+      "sourceRecordId": "rec373367566",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Креветочные чипсы",
+      "sourceProductId": "1699521147320",
+      "sourceRecordId": "rec373367566",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Фо Бо",
+      "sourceProductId": "1497456130776",
+      "sourceRecordId": "rec373493392",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Фо Га",
+      "sourceProductId": "1498486301712",
+      "sourceRecordId": "rec373493392",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Том Ям Кхати с курицей",
+      "sourceProductId": "1498486363994",
+      "sourceRecordId": "rec373493392",
+      "optionGroupsCount": 1
+    },
+    {
+      "name": "Том Ям Кхати с морепродуктами",
+      "sourceProductId": "1786898469755",
+      "sourceRecordId": "rec373493392",
+      "optionGroupsCount": 1
+    },
+    {
+      "name": "Лапша Вок (собери сам)",
+      "sourceProductId": "1497456130776",
+      "sourceRecordId": "rec373511433",
+      "optionGroupsCount": 2
+    },
+    {
+      "name": "Лапша БакМи Горенг",
+      "sourceProductId": "1498486363994",
+      "sourceRecordId": "rec373511433",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Лапша Сингапур",
+      "sourceProductId": "1635680502550",
+      "sourceRecordId": "rec373511433",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Лапша ПадТай",
+      "sourceProductId": "1659012360949",
+      "sourceRecordId": "rec373511433",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Рис с яйцом и зеленым луком",
+      "sourceProductId": "1659012913149",
+      "sourceRecordId": "rec373511433",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Рис с курицей",
+      "sourceProductId": "1659012984829",
+      "sourceRecordId": "rec373511433",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Рис по-тайски с креветками и овощами",
+      "sourceProductId": "1659013049128",
+      "sourceRecordId": "rec373511433",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Креветки в соусе апельсиновый кимчи",
+      "sourceProductId": "1699529227507",
+      "sourceRecordId": "rec373515503",
+      "optionGroupsCount": 1
+    },
+    {
+      "name": "Говядина в соусе черный перец",
+      "sourceProductId": "1659016766062",
+      "sourceRecordId": "rec373515503",
+      "optionGroupsCount": 1
+    },
+    {
+      "name": "Курица в кисло-сладком соусе",
+      "sourceProductId": "1659016881760",
+      "sourceRecordId": "rec373515503",
+      "optionGroupsCount": 1
+    },
+    {
+      "name": "Курица по-китайски",
+      "sourceProductId": "1659017004954",
+      "sourceRecordId": "rec373515503",
+      "optionGroupsCount": 1
+    },
+    {
+      "name": "Курица по-тайски с кешью",
+      "sourceProductId": "1659017077070",
+      "sourceRecordId": "rec373515503",
+      "optionGroupsCount": 1
+    },
+    {
+      "name": "Курица терияки",
+      "sourceProductId": "1659017159479",
+      "sourceRecordId": "rec373515503",
+      "optionGroupsCount": 1
+    },
+    {
+      "name": "Паровой рис",
+      "sourceProductId": "7873735193090",
+      "sourceRecordId": "rec836273340",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Брокколи по-азиатски",
+      "sourceProductId": "7873735193091",
+      "sourceRecordId": "rec836273340",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Порция соуса на выбор",
+      "sourceProductId": "1733459904198",
+      "sourceRecordId": "rec836273340",
+      "optionGroupsCount": 1
+    },
+    {
+      "name": "Бананы по-вьетнамски",
+      "sourceProductId": "1516628799188",
+      "sourceRecordId": "rec373519309",
+      "optionGroupsCount": 0
+    },
+    {
+      "name": "Вьетнамский лимонад",
+      "sourceProductId": "1516628799188",
+      "sourceRecordId": "rec373520909",
+      "optionGroupsCount": 1
+    }
+  ]
+}

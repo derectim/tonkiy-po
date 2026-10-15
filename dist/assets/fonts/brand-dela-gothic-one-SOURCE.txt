@@ -1,0 +1,22 @@
+Dela Gothic One — artakana
+
+Copyright 2020 The Dela Gothic Project Authors
+License: SIL Open Font License 1.1; see brand-dela-gothic-one-OFL.txt.
+
+Official upstream:
+https://github.com/syakuzen/DelaGothic
+
+Official Google Fonts metadata (Cyrillic + Japanese coverage):
+https://github.com/google/fonts/blob/main/ofl/delagothicone/METADATA.pb
+
+Self-hosted WOFF2 files downloaded from the Google Fonts CSS API on 2026-10-15:
+https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap
+
+Cyrillic:
+https://fonts.gstatic.com/s/delagothicone/v19/hESp6XxvMDRA-2eD0lXpDa6QkBA2RkEIcAk.woff2
+
+Latin:
+https://fonts.gstatic.com/s/delagothicone/v19/hESp6XxvMDRA-2eD0lXpDa6QkBA2QkEI.woff2
+
+Use at its provided 400 weight, without synthetic bold or italic.
+Intended for the cafe wordmark only. UI text remains Manrope.

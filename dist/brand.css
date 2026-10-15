@@ -1,0 +1,10 @@
+/* Dela Gothic One: Japanese display with real Cyrillic, OFL 1.1, local files. */
+@font-face{font-family:'Dela Gothic One';font-style:normal;font-weight:400;font-display:swap;src:url('./assets/fonts/brand-dela-gothic-one-cyrillic.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Dela Gothic One';font-style:normal;font-weight:400;font-display:swap;src:url('./assets/fonts/brand-dela-gothic-one-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF,U+FEFF,U+FFFD}
+.hero-masthead,.small-wordmark,.footer-brand>a:first-child{font-family:'Dela Gothic One',Manrope,sans-serif;font-weight:400;font-synthesis:none}
+.hero-masthead{letter-spacing:-.035em}
+.small-wordmark{font-size:25px;letter-spacing:-.8px}
+.small-wordmark span,.footer-brand>a:first-child>span{font-family:var(--body);font-weight:500}
+.footer-brand>a:first-child{font-size:28px;letter-spacing:-.8px}
+.hero-thought{margin:0}
+@media(max-width:600px){.small-wordmark{font-size:21px;letter-spacing:-.6px}.footer-brand>a:first-child{font-size:27px}}

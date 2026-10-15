@@ -146,7 +146,7 @@
         }
       });
 
-      if (!coarsePointer.matches && typeof window.Lenis === 'function') {
+      if (desktop.matches && !coarsePointer.matches && typeof window.Lenis === 'function') {
         // Recommended Lenis foundation, added only while its instance is active.
         // No CSS selector hides or disables content while motion initializes.
         current.style = document.createElement('style');
