@@ -352,7 +352,11 @@
       announce('Демо-заказ создан. В кафе ничего не отправлено.');
     }
   });
-  $('#menu-search')?.addEventListener('input', (event) => { state.query = event.target.value; renderProducts(); });
+  $('#menu-search')?.addEventListener('input', (event) => {
+    state.query = event.target.value;
+    if (state.query.trim()) state.category = 'all';
+    renderProducts();
+  });
   for (const dialog of [mainDialog, drawerDialog].filter(Boolean)) {
     dialog.addEventListener('cancel', (event) => { event.preventDefault(); closeDialogs(); });
     dialog.addEventListener('click', (event) => {
