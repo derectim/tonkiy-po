@@ -147,7 +147,7 @@ for (const options of [
   { width: 1200, coarse: true, label: 'large touch screen' },
 ]) {
   const env = environment(options);
-  assert.equal(env.calls.intro, 1, `${options.label}: GSAP intro remains available`);
+  assert.equal(env.calls.intro, 0, `${options.label}: native hero stays static while the user starts scrolling`);
   assert.equal(env.calls.reverts, 0, `${options.label}: no hidden initialization failure`);
   assert.equal(env.calls.disable, 1, `${options.label}: disable ScrollTrigger's own global refresh listeners`);
   assert.equal(env.document.documentElement.dataset.scrollMode, 'native');
@@ -166,6 +166,7 @@ for (const options of [
   const env = environment({ width: 1200, coarse: false });
   assert.equal(env.calls.reverts, 0, 'Desktop runtime initialized without a swallowed mock error');
   assert.equal(env.document.documentElement.dataset.scrollMode, 'enhanced');
+  assert.ok(env.calls.intro > 0, 'Fine-pointer desktop retains its hero intro');
   assert.ok(env.calls.triggers > 0, 'Fine-pointer desktop retains scroll-triggered decoration');
   assert.equal(env.lenisInstances.length, 1);
   assert.equal(env.ticker.size, 1);

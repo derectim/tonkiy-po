@@ -119,7 +119,7 @@
       current.context.add(() => {
         const heroTargets = [...document.querySelectorAll('[data-hero-reveal]')]
           .filter((element) => !element.parentElement?.closest('[data-hero-reveal]'));
-        if (heroTargets.length && !introPlayed) {
+        if (scrollMotion && heroTargets.length && !introPlayed) {
           introPlayed = true;
           current.heroTween = gsap.fromTo(heroTargets, { opacity: 0.2, y: 24 }, {
             opacity: 1, y: 0, duration: 1.1, stagger: 0.11, ease: 'power3.out',

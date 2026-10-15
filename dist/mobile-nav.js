@@ -103,6 +103,7 @@
   document.addEventListener('cafe:category-request', (event) => scrollToCategory(event.detail?.category || 'all'));
   document.addEventListener('cafe:menu-rendered', () => { cancelPending(); active = ''; scheduleMeasure(); });
   document.addEventListener('cafe:menu-mode', scheduleMeasure);
+  document.addEventListener('cafe:hero-layout', scheduleMeasure);
   document.addEventListener('visibilitychange', () => { if (!document.hidden) scheduleMeasure(); });
   window.addEventListener('scroll', scheduleSpy, { passive: true });
   window.addEventListener('resize', scheduleMeasure, { passive: true });
